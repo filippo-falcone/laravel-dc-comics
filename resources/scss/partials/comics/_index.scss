@@ -1,0 +1,76 @@
+@use '../variables' as *;
+@use './hero';
+
+.current-series {
+    background-color: $brand-secondary;
+    color: $brand-light;
+    text-transform: uppercase;
+
+    .content-container {
+        margin-top: -35px;
+
+        .rectangle {
+            width: fit-content;
+            background-color: $brand-primary;
+
+            &.title {
+                padding-left: 1.875rem;
+                padding-right: 1.875rem;
+            }
+
+            &.load-more {
+                padding-left: 3.75rem;
+                padding-right: 3.75rem;
+            }
+        }
+
+        .load-more {
+            align-self: center;
+            cursor: pointer;
+
+            a {
+                color: $brand-light;
+            }
+        }
+    }
+}
+
+.img-container {
+    width: 150px;
+    height: 150px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .img-container {
+        width: 15.625rem;
+        height: 15.625rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img-container {
+        width: 13.75rem;
+        height: 13.75rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .img-container {
+        width: 14.375rem;
+        height: 14.375rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .img-container {
+        width: 11.75rem;
+        height: 11.75rem;
+    }
+}

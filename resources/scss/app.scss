@@ -1,5 +1,6 @@
 @use './partials/variables' as *;
 @use './partials/header';
+@use './partials/comics/index';
 @import '~bootstrap/scss/bootstrap';
 
 body {
