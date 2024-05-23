@@ -7,7 +7,7 @@
     <section class="current-series">
         <div class="container pb-5">
             <div class="content-container d-flex flex-column">
-                    <div class="title rectangle py-3">
+                <div class="title rectangle py-3">
                     <div class="fs-3">current series</div>
                 </div>
                 <div class="row py-4 g-3">
