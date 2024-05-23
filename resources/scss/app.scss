@@ -1,6 +1,8 @@
 @use './partials/variables' as *;
 @use './partials/header';
+@use './partials/home';
 @use './partials/comics/index';
+@use './partials/comics/show';
 @import '~bootstrap/scss/bootstrap';
 
 body {
