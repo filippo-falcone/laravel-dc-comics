@@ -11,9 +11,23 @@ header {
             position: relative;
 
             .nav-link {
+                &.ms-active {
+                    color: $brand-primary;
+                }
 
                 &:hover {
                     color: $brand-primary;
+                }
+            }
+
+            div {
+                &.ms-active {
+                    width: 86%;
+                    height: .3125rem;
+                    background-color: $brand-primary;
+                    position: absolute;
+                    bottom: -110%;
+                    left: 9%;
                 }
             }
         }

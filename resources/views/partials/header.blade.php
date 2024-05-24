@@ -11,33 +11,43 @@
                 <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">Characters</a>
+                        <div class="d-none d-xl-block" :class="{'ms-active': index == activeItem}"></div>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="{{route('comics.index')}}">Comics</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'comics.index' ? 'ms-active' : ''}}" href="{{route('comics.index')}}">Comics</a>
+                        <div class="d-none d-xl-block {{Route::currentRouteName() === 'comics.index' ? 'ms-active' : ''}}"></div>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">Movies</a>
+                        <div class="d-none d-xl-block"></div>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">Tv</a>
+                        <div class="d-none d-xl-block"></div>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">Games</a>
+                        <div class="d-none d-xl-block"></div>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">Collectibles</a>
+                        <div class="d-none d-xl-block"></div>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">Videos</a>
+                        <div class="d-none d-xl-block"></div>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">Fans</a>
+                        <div class="d-none d-xl-block"></div>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">News</a>
+                        <div class="d-none d-xl-block"></div>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">Shop</a>
+                        <div class="d-none d-xl-block"></div>
                     </li>
                 </ul>
             </div>
