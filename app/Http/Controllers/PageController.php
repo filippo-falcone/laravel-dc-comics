@@ -11,6 +11,7 @@ class PageController extends Controller
         $data = [
             'purchases' => $purchase
         ];
+        
         return view('home', $data);
     }
 }

@@ -20,6 +20,7 @@ class ComicController extends Controller
             'purchases' => $purchase,
             'comics' => $comics
         ];
+        
         return view('comics.index', $data);
     }
 
@@ -67,7 +68,7 @@ class ComicController extends Controller
         $data = [
             'comic' => $comic
         ];
-        
+
         return view('comics.show', $data);
     }
 
