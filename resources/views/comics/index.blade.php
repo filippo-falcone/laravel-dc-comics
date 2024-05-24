@@ -20,7 +20,7 @@
                         </div>
                     @endforeach
                 </div>
-                <div class="load-more rectangle py-2 text-center">
+                <div class="add-comic rectangle py-2 text-center">
                     <a href="{{route('comics.create')}}">add comic</a>
                 </div>
             </div>

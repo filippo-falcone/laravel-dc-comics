@@ -18,6 +18,9 @@
                         <small class="text-body-secondary">Released {{$comic->sale_date}}</small>
                     </p>
                 </div>
+                <div class="edit-comic rectangle py-2 text-center">
+                    <a href="{{route('comics.edit', ['comic' => $comic->id])}}">edit comic</a>
+                </div>
             </div>
         </div>
     </section>
