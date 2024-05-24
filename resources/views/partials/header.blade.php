@@ -8,12 +8,36 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="{{route('home')}}">HOME</a>
+                        <a class="nav-link" href="#">Characters</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="{{route('comics.index')}}">COMICS</a>
+                        <a class="nav-link" href="{{route('comics.index')}}">Comics</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Tv</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Games</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Collectibles</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Videos</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Fans</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Shop</a>
                     </li>
                 </ul>
             </div>

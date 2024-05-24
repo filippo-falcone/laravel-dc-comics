@@ -1,0 +1,75 @@
+@use './variables' as *;
+
+.footer-link-container {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row {
+        .footer-link {
+            .title {
+                color: $brand-light;
+                text-transform: uppercase;
+                font-weight: 900;
+            }
+
+            ul {
+                a {
+                    font-size: .875rem;
+                    color: $brand-tertiary;
+
+                    &:hover {
+                        color: $brand-primary;
+                    }
+                }
+            }
+        }
+
+        .footer-img {
+            width: 50%;
+            background-image: url(../img/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+.footer-social {
+    background-color: $brand-secondary-light;
+    text-transform: uppercase;
+
+    .container {
+        button {
+            padding: .875rem;
+            background-color: $brand-secondary-light;
+            border: .0625rem solid $brand-primary;
+            color: $brand-light;
+            text-transform: uppercase;
+            transition: transform 0.5s;
+
+            &:hover {
+                background-color: $brand-light;
+                color: $brand-primary;
+                font-size: 900;
+                transform: scale(1.1);
+            }
+        }
+
+        .social {
+            .text {
+                color: $brand-primary;
+            }
+
+            .social-circle {
+                img {
+                    cursor: pointer;
+
+                    &:hover {
+                        filter: brightness(0.8);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -12,7 +12,7 @@
                 </div>
                 <div class="row py-4 g-3">
                     @foreach ($comics as $comic)
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center justify-content-center">
                             <div class="img-container">
                                 <img src="{{$comic['thumb']}}"  alt="{{$comic['series']}}">
                             </div>
