@@ -15,19 +15,21 @@
         background-color: $brand-primary;
         border: none;
         text-transform: uppercase;
+        transition: transform 0.5s;
 
         &.edit-comic {
             padding-left: 3.75rem;
             padding-right: 3.75rem;
+            align-self: center;
+            cursor: pointer;
+
+            a {
+                color: $brand-light;
+            }
         }
-    }
 
-    .edit-comic {
-        align-self: center;
-        cursor: pointer;
-
-        a {
-            color: $brand-light;
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }

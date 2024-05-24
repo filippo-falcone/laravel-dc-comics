@@ -13,8 +13,11 @@
                 <div class="row py-4 g-3">
                     @foreach ($comics as $comic)
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
-                            <div class="img-container">
+                            <div class="img-container position-relative">
                                 <img src="{{$comic->thumb}}"  alt="{{$comic->series}}">
+                                <div class="img-hover justify-content-center align-items-center position-absolute top-0 end-0 bottom-0 start-0">
+                                    <a href="{{route('comics.show', ['comic' => $comic->id])}}">Info</a>
+                                </div>
                             </div>
                             <div class="text pt-4">{{$comic->series}}</div>
                         </div>
