@@ -26,4 +26,6 @@
             </div>
         </div>
     </section>
+    
+    @include('partials.buy')
 @endsection
