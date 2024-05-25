@@ -14,8 +14,8 @@
                         <div class="d-none d-xl-block" :class="{'ms-active': index == activeItem}"></div>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link {{Route::currentRouteName() === 'comics.index' ? 'ms-active' : ''}}" href="{{route('comics.index')}}">Comics</a>
-                        <div class="d-none d-xl-block {{Route::currentRouteName() === 'comics.index' ? 'ms-active' : ''}}"></div>
+                        <a class="nav-link {{Route::currentRouteName() === 'comics.index' || Route::currentRouteName() === 'comics.show' || Route::currentRouteName() === 'comics.create' || Route::currentRouteName() === 'comics.edit' ? 'ms-active' : ''}}" href="{{route('comics.index')}}">Comics</a>
+                        <div class="d-none d-xl-block {{Route::currentRouteName() === 'comics.index' || Route::currentRouteName() === 'comics.show' || Route::currentRouteName() === 'comics.create' || Route::currentRouteName() === 'comics.edit' ? 'ms-active' : ''}}"></div>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">Movies</a>
