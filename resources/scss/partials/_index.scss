@@ -38,6 +38,7 @@
             width: 150px;
             height: 150px;
             transition: transform 0.5s;
+            cursor: pointer;
 
             img {
                 width: 100%;
@@ -51,15 +52,6 @@
             .img-hover {
                 display: none;
                 background-color: rgba(0, 0, 0, 0.7);
-
-                a {
-                    display: none;
-                    color: $brand-light;
-
-                    &:hover {
-                        color: $brand-primary;
-                    }
-                }
             }
 
             &:hover {
