@@ -30,7 +30,7 @@
                     <input type="date" class="form-control" id="date" name="sale_date" value="{{$comic->sale_date}}">
                 </div>
                 <select class="form-select" name="type">
-                    <option @selected($comic->type === '')>Select type</option>
+                    <option @selected($comic->type === '') value="">Select type</option>
                     <option @selected($comic->type === 'comic book') value="comic book">Comic Book</option>
                     <option @selected($comic->type === 'graphic novel') value="graphic novel">Graphic Novel</option>
                 </select>
