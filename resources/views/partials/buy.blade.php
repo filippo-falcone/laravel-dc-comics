@@ -4,9 +4,9 @@
             @foreach ($purchases as $purchase)
                 <div class="col-6 col-md d-flex align-items-center">
                     <div class="image me-2">
-                        <img src="{{Vite::asset('resources/img/'.$purchase['image'])}}" alt="{{$purchase['text']}}">
+                        <img src="{{ Vite::asset('resources/img/' . $purchase['image']) }}" alt="{{ $purchase['text'] }}">
                     </div>
-                    <a href="#" class="text">{{$purchase['text']}}</a>
+                    <a href="#" class="text">{{ $purchase['text'] }}</a>
                 </div>
             @endforeach
         </div>

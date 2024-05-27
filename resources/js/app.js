@@ -13,9 +13,9 @@ addElementBtn.addEventListener('click', function () {
 });
 
 const showElement = document.querySelectorAll('.show-element');
-showElement.forEach((element, index) => {
+showElement.forEach((element) => {
     element.addEventListener('click', function () {
-        const id = index + 1;
-        window.location.href = `comics/${id}`;
+        const elementId = this.dataset.elementId;
+        window.location.href = `comics/${elementId}`;
     });
 });

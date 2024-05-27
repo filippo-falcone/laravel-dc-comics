@@ -12,7 +12,7 @@
                                         <div class="title fs-4">dc comics</div>
                                         <ul>
                                             <li><a href="#">Characters</a></li>
-                                            <li><a href="{{route('comics.index')}}">Comics</a></li>
+                                            <li><a href="{{ route('comics.index') }}">Comics</a></li>
                                             <li><a href="#">Movies</a></li>
                                             <li><a href="#">Tv</a></li>
                                             <li><a href="#">Games</a></li>
@@ -71,19 +71,19 @@
                 <div class="text">Follow Us</div>
                 <div class="social-circle d-flex flex-wrap gap-2">
                     <div class="circle">
-                        <img src="{{Vite::asset('resources/img/footer-facebook.png')}}" alt="Facebook">
+                        <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="Facebook">
                     </div>
                     <div class="circle">
-                        <img src="{{Vite::asset('resources/img/footer-twitter.png')}}" alt="Twitter">
+                        <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="Twitter">
                     </div>
                     <div class="circle">
-                        <img src="{{Vite::asset('resources/img/footer-youtube.png')}}" alt="YouTube">
+                        <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="YouTube">
                     </div>
                     <div class="circle">
-                        <img src="{{Vite::asset('resources/img/footer-pinterest.png')}}" alt="Pinterest">
+                        <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="Pinterest">
                     </div>
                     <div class="circle">
-                        <img src="{{Vite::asset('resources/img/footer-periscope.png')}}" alt="Periscope">
+                        <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="Periscope">
                     </div>
                 </div>
             </div>
