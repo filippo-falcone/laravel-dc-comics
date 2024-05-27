@@ -14,19 +14,5 @@
         transition: transform 0.5s;
         padding-left: 3.75rem;
         padding-right: 3.75rem;
-        align-self: center;
-        cursor: pointer;
-
-        &.edit-element {
-            background-color: $brand-primary;
-        }
-
-        a {
-            color: $brand-light;
-        }
-
-        &:hover {
-            transform: scale(1.1);
-        }
     }
 }

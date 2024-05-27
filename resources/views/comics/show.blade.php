@@ -22,8 +22,9 @@
                     </p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <button type="button" class="edit-element text-center">
-                        <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">edit comic</a>
+                    <button type="button" class="edit-element rectangle py-2 text-center"
+                        data-element-id="{{ $comic->id }}">
+                        edit comic
                     </button>
                     <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="POST">
                         @csrf
