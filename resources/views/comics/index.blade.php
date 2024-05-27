@@ -23,9 +23,9 @@
                         </div>
                     @endforeach
                 </div>
-                <div class="add-element rectangle py-2 text-center">
+                <button type="button" class="add-element rectangle py-2 text-center">
                     <a href="{{route('comics.create')}}">add comic</a>
-                </div>
+                </button>
             </div>
         </div>
     </section>

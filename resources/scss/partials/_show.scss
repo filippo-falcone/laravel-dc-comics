@@ -11,21 +11,18 @@
     }
 
     .rectangle {
-        width: fit-content;
-        background-color: $brand-primary;
-        border: none;
-        text-transform: uppercase;
         transition: transform 0.5s;
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+        align-self: center;
+        cursor: pointer;
 
         &.edit-element {
-            padding-left: 3.75rem;
-            padding-right: 3.75rem;
-            align-self: center;
-            cursor: pointer;
+            background-color: $brand-primary;
+        }
 
-            a {
-                color: $brand-light;
-            }
+        a {
+            color: $brand-light;
         }
 
         &:hover {

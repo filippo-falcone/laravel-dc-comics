@@ -21,8 +21,10 @@
                         <small class="text-body-secondary">{{ date("m/d/Y", strtotime($comic->sale_date))}}</small>
                     </p>
                 </div>
-                <div class="edit-element rectangle py-2 text-center">
-                    <a href="{{route('comics.edit', ['comic' => $comic->id])}}">edit comic</a>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="edit-element rectangle py-2 text-center">
+                        <a href="{{route('comics.edit', ['comic' => $comic->id])}}">edit comic</a>
+                    </button>
                 </div>
             </div>
         </div>
