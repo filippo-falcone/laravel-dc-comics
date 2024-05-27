@@ -1,6 +1,6 @@
-@use '../variables' as *;
+@use './variables' as *;
 
-.single-comics {
+.single-element {
     .card {
         max-width: 70%;
         border: none;
@@ -17,7 +17,7 @@
         text-transform: uppercase;
         transition: transform 0.5s;
 
-        &.edit-comic {
+        &.edit-element {
             padding-left: 3.75rem;
             padding-right: 3.75rem;
             align-self: center;

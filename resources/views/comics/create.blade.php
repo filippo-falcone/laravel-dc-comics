@@ -28,7 +28,7 @@
                     <input type="date" class="form-control" id="date" name="sale_date">
                 </div>
                 <select class="form-select" name="type">
-                    <option selected>Select type</option>
+                    <option value="" selected>Select type</option>
                     <option value="comic book">Comic Book</option>
                     <option value="graphic novel">Graphic Novel</option>
                 </select>

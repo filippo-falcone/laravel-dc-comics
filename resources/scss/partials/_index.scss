@@ -1,7 +1,7 @@
-@use '../variables' as *;
+@use './variables' as *;
 @use './hero';
 
-.current-series {
+.current-media {
     background-color: $brand-secondary;
     color: $brand-light;
     text-transform: uppercase;
@@ -19,7 +19,7 @@
                 padding-right: 1.875rem;
             }
 
-            &.add-comic {
+            &.add-element {
                 padding-left: 3.75rem;
                 padding-right: 3.75rem;
                 align-self: center;

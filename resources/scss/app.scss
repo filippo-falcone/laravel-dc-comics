@@ -2,8 +2,8 @@
 @use './partials/header';
 @use './partials/home';
 @use './partials/buy';
-@use './partials/comics/index';
-@use './partials/comics/show';
+@use './partials/index';
+@use './partials/show';
 @use './partials/footer';
 @import '~bootstrap/scss/bootstrap';
 

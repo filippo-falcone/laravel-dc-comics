@@ -4,7 +4,7 @@
 
 @section('content')
     @include('partials.comics.hero')
-    <section class="current-series">
+    <section class="current-media">
         <div class="container pb-5">
             <div class="content-container d-flex flex-column">
                 <div class="title rectangle py-3">
@@ -23,7 +23,7 @@
                         </div>
                     @endforeach
                 </div>
-                <div class="add-comic rectangle py-2 text-center">
+                <div class="add-element rectangle py-2 text-center">
                     <a href="{{route('comics.create')}}">add comic</a>
                 </div>
             </div>
