@@ -12,10 +12,13 @@
                     <p class="card-text">{{$comic->description}}</p>
                     <p class="card-text">{{$comic->price}}$</p>
                     <p class="card-text">
-                        <small class="text-body-secondary">Series {{$comic->series}}</small>
+                        <small class="text-body-secondary">{{$comic->series}}</small>
                     </p>
                     <p class="card-text">
-                        <small class="text-body-secondary">Released {{$comic->sale_date}}</small>
+                        <small class="text-body-secondary">{{ucwords($comic->type)}}</small>
+                    </p>
+                    <p class="card-text">
+                        <small class="text-body-secondary">{{ date("m/d/Y", strtotime($comic->sale_date))}}</small>
                     </p>
                 </div>
                 <div class="edit-element rectangle py-2 text-center">
