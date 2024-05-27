@@ -7,6 +7,9 @@
 
     <title>@yield('page-title')</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ Vite::asset('resources/img/favicon.ico') }}" type="image/x-icon">
+
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
