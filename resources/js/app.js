@@ -6,6 +6,13 @@ import.meta.glob([
 ])
 
 /* Window Redirect */
+const showAllElementBtn = document.querySelector('.show-all-element');
+if (showAllElementBtn) {
+    showAllElementBtn.addEventListener('click', function () {
+        window.location.href = 'comics';
+    });
+}
+
 const addElementBtn = document.querySelector('.add-element');
 if (addElementBtn) {
     addElementBtn.addEventListener('click', function () {
@@ -14,9 +21,9 @@ if (addElementBtn) {
     });
 }
 
-const showElement = document.querySelectorAll('.show-element');
-if (showElement) {
-    showElement.forEach((element) => {
+const showElementBtn = document.querySelectorAll('.show-element');
+if (showElementBtn) {
+    showElementBtn.forEach((element) => {
         element.addEventListener('click', function () {
             const elementId = this.dataset.elementId;
             window.location.href = `comics/${elementId}`;
