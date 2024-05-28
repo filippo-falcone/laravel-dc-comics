@@ -123,6 +123,13 @@ class ComicController extends Controller
                 'series' => 'required|min:4|max:50',
                 'sale_date' => 'required|date',
                 'type' => 'required|max:50'
+            ],
+            [
+                'required' => 'Il campo :attribute è obbligatorio',
+                'min' => 'Il campo :attribute deve essere di almeno :min caratteri',
+                'max' => 'Il campo :attribute deve essere di massimo :max caratteri',
+                'date' => 'Il campo :attribute deve essere una data',
+                'decimal' => 'Il campo :attribute deve essere un numero decimale'
             ]
         )->validate();
         return $validator;
