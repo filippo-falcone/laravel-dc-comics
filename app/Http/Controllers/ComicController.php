@@ -21,7 +21,6 @@ class ComicController extends Controller
             'purchases' => $purchase,
             'comics' => $comics
         ];
-
         return view('comics.index', $data);
     }
 
@@ -48,7 +47,6 @@ class ComicController extends Controller
         $comic = new Comic();
         $comic->fill($data);
         $comic->save();
-
         return redirect()->route('comics.show', ['comic' => $comic->id]);
     }
 
@@ -61,15 +59,12 @@ class ComicController extends Controller
     public function show(Comic $comic)
     {
         // $comic = Comic::findOrfail($id);
-
         // if(!$comic){
         //     abort(404);
         // }
-
         $data = [
             'comic' => $comic
         ];
-
         return view('comics.show', $data);
     }
 
@@ -82,11 +77,9 @@ class ComicController extends Controller
     public function edit($id)
     {
         $comic = Comic::findOrFail($id);
-
         $data = [
             'comic' => $comic
         ];
-
         return view('comics.edit', $data);
     }
 
@@ -99,11 +92,10 @@ class ComicController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $comic = Comic::findOrFail($id);
-
         $data = $request->all();
+        $this->validation($data);
+        $comic = Comic::findOrFail($id);
         $comic->update($data);
-
         return redirect()->route('comics.show', ['comic' => $comic->id]);
     }
 
@@ -116,7 +108,6 @@ class ComicController extends Controller
     public function destroy(Comic $comic)
     {
         $comic->delete();
-
         return redirect()->route('comics.index');
     }
 
@@ -126,7 +117,7 @@ class ComicController extends Controller
             $data,
             [
                 'title' => 'required|min:5|max:100',
-                'description' => 'nullable|min:20|max20000',
+                'description' => 'nullable|min:20|max:20000',
                 'thumb' => 'required|min:10|max:255',
                 'price' => 'required|decimal:2',
                 'series' => 'required|min:4|max:50',
