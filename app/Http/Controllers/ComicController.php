@@ -122,14 +122,15 @@ class ComicController extends Controller
                 'price' => 'required|decimal:2',
                 'series' => 'required|min:4|max:50',
                 'sale_date' => 'required|date',
-                'type' => 'required|max:50'
+                'type' => 'required|max:50|in:comic book,graphic novel',
             ],
             [
                 'required' => 'Il campo :attribute è obbligatorio',
                 'min' => 'Il campo :attribute deve essere di almeno :min caratteri',
                 'max' => 'Il campo :attribute deve essere di massimo :max caratteri',
                 'date' => 'Il campo :attribute deve essere una data',
-                'decimal' => 'Il campo :attribute deve essere un numero decimale'
+                'decimal' => 'Il campo :attribute deve essere un numero decimale',
+                'type.required' => 'Il campo :attribute deve avere uno dei seguenti valori: comic book, graphic novel',
             ]
         )->validate();
         return $validator;

@@ -18,7 +18,7 @@
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label for="thumb" class="form-label">Image</label>
+                    <label for="thumb" class="form-label">Thumb</label>
                     <input type="text" class="form-control" id="thumb" name="thumb"
                         value="{{ old('thumb', $comic->thumb) }}">
                     @error('thumb')
@@ -42,21 +42,24 @@
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label for="date" class="form-label">Date</label>
+                    <label for="date" class="form-label">Sale date</label>
                     <input type="date" class="form-control" id="date" name="sale_date"
                         value="{{ old('sale_date', $comic->sale_date) }}">
                     @error('sale_date')
                         <div class="text-danger">{{ $message }}</div>
                     @enderror
                 </div>
-                <select class="form-select" name="type">
-                    <option @selected(old('type', $comic->type) === '') value="">Select type</option>
-                    <option @selected(old('type', $comic->type) === 'comic book') value="comic book">Comic Book</option>
-                    <option @selected(old('type', $comic->type) === 'graphic novel') value="graphic novel">Graphic Novel</option>
+                <div class="mb-3">
+                    <label for="type" class="form-label">Type</label>
+                    <select class="form-select" name="type">
+                        <option @selected(old('type', $comic->type) === '') value="">Select type</option>
+                        <option @selected(old('type', $comic->type) === 'comic book') value="comic book">Comic Book</option>
+                        <option @selected(old('type', $comic->type) === 'graphic novel') value="graphic novel">Graphic Novel</option>
+                    </select>
                     @error('type')
                         <div class="text-danger">{{ $message }}</div>
                     @enderror
-                </select>
+                </div>
                 <div class="mb-3">
                     <label for="description" class="form-label">Description</label>
                     <textarea class="form-control" id="description" rows="6" name="description">{{ old('description', $comic->description) }}</textarea>
